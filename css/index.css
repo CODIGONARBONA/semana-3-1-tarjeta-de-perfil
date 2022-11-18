@@ -1,0 +1,100 @@
+:root {
+    --primary-theme-color: #20232a;
+    --primary-shadow-color: #2a2520bf;
+    --secondary-shadow-color: #282c34;
+    --primary-text-color: #fff;
+    --primary-highlight-color: #396470;
+    --primary-font-family: monospace;
+  }
+  
+
+  .body {
+    background-color: var(--primary-shadow-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    margin: 0;
+  }
+  
+
+  .hero {
+    display: flex;
+    background-image: url(https://i.postimg.cc/6QVV8tGh/Pala-electrica.jpg);
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+  }
+  
+
+  .card {
+    border: 0.125rem solid var(--primary-highlight-color);
+    border-radius: 1rem;
+    max-width: 320px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .card:hover {    
+    border: 0.125rem solid var(--primary-font-family);
+  }
+
+  .card__header {
+    background-color: var(--primary-shadow-color);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+
+  .card__img {
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+    width: min(100%, 256px);
+    object-fit: cover;
+  }
+
+  .card__body {
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+    background-color: var(--secondary-shadow-color);
+    padding: 1rem;
+  }
+  
+  .card__title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .card__subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .card__text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .card__text::before {
+    content: '🚧';
+  }
+  
+  .card__text::after {
+    content: '🚧';
+  }
+  
+  .card__footer {
+    background-color: var(--primary-shadow-color);
+    padding: 1rem;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
